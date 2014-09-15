@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480px"
+    android:layout_height="800px" 
+    android:background="@drawable/pictures_all_bg"
+    android:orientation="vertical">
+<RelativeLayout
+	android:id="@+id/gridview_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="38px"
+	android:gravity="center_vertical"
+	android:background="@drawable/news_channel_fanhui_bg">
+	<ImageView
+	android:id="@+id/pictures_fanhui"
+	android:gravity="center"
+	android:layout_width="wrap_content"
+    android:layout_height="38px"
+    android:layout_marginLeft="13px"
+    android:background="@drawable/news_channel_return"
+    android:layout_alignParentTop="true"/>
+</RelativeLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="68px"
+		android:background="@drawable/cntv_banner"/>
+<LinearLayout
+	android:id="@+id/gridview_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="600px"
+	android:orientation="vertical"
+	android:background="@drawable/cntv_pic_img_bg">
+	<GridView 
+	android:id="@+id/pictures_gv" 
+	android:layout_width="wrap_content"
+	android:layout_height="600px"
+	android:numColumns="3"
+	android:columnWidth="180dp"
+	android:verticalSpacing="17dp"
+	android:horizontalSpacing="17dp" 
+	android:gravity="center"/>
+</LinearLayout>
+
+<LinearLayout 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:gravity="center"
+    android:layout_height="64px"
+	android:background="@drawable/botton_bg">
+	<ImageButton
+	android:id="@+id/pictures_bib1"
+	android:layout_width="120px"
+    android:layout_height="64px"
+    android:background="@drawable/news_news1"/>
+	<ImageButton 
+	android:background="@drawable/news_videos1" 
+	android:id="@+id/pictures_bib2" 	
+	android:layout_width="120px"
+    android:layout_height="64px"></ImageButton>
+    <ImageButton
+	android:id="@+id/pictures_bib3"
+	android:layout_width="120px"
+    android:layout_height="64px"
+    android:background="@drawable/news_collects2"/>
+    <ImageButton
+	android:id="@+id/pictures_bib4"
+	android:layout_width="120px"
+    android:layout_height="64px"
+    android:background="@drawable/news_pictures1"/>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.cntv.magazine"
+      android:versionCode="1"
+      android:versionName="1.0"
+      android:installLocation="auto">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".start.StartActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+		            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+		<activity android:name=".videos.Videos_Expanda_FristGame" android:screenOrientation="portrait"></activity>
+		<activity android:name=".videos.Videos_Main" android:screenOrientation="portrait"></activity>
+		<activity android:name=".videos.VideoSecond" android:screenOrientation="portrait"></activity>
+		<activity android:name=".videos.VideoViewStart" android:screenOrientation="landscape"></activity>
+		<activity android:name=".videos.Video" android:screenOrientation="portrait"></activity>
+		<activity android:name=".videos.Video_More" android:screenOrientation="portrait"></activity>
+		<activity android:name=".videos.Videos_WBK" android:screenOrientation="portrait"></activity>
+		
+		<activity android:name=".pictures.Pictures_Main" android:screenOrientation="portrait"></activity>
+		<activity android:name=".pictures.Pictures_details" android:screenOrientation="portrait"></activity>
+		
+		<activity android:name=".news.NewsMainActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name=".news.NewsChannelActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name=".news.NewsIndustryActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name=".news.NewsTextActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name=".collects.CollectsIndexActivity" android:screenOrientation="portrait"></activity>
+		<activity android:name=".collects.CollectsContent" android:screenOrientation="portrait"></activity>
+		<activity android:name=".collects.CollectsContent_video" android:screenOrientation="portrait"></activity>
+		<activity android:name=".collects.CollectsContent_Pic" android:screenOrientation="portrait"></activity>
+		<activity android:name=".collects.Collects_video_second" android:screenOrientation="portrait"></activity>
+    </application>
+    <uses-sdk android:minSdkVersion="8"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+</manifest> 

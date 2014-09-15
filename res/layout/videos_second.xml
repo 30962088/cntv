@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="480px"
+    android:layout_height="800px"
+    android:background="@drawable/pictures_all_bg"
+    >
+	<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="38px"
+	android:gravity="center_vertical"
+	android:background="@drawable/news_channel_fanhui_bg">
+	<ImageView
+	android:id="@+id/image_return"
+	android:gravity="center"
+	android:paddingLeft="20dp"
+	android:layout_width="wrap_content"
+    android:layout_height="38px"
+    android:layout_marginLeft="13px"
+    android:background="@drawable/news_channel_return"
+    android:layout_alignParentTop="true"/>
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="43dp"
+		android:background="@drawable/cntv_banner">
+		<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="68px"
+		android:gravity="center_vertical"
+		android:background="@drawable/cntv_banner">
+		 <Button
+			android:id="@+id/video_shoucang1"
+			android:layout_width="100px"
+			android:layout_height="50px"
+		    android:background="@drawable/collect_btn"
+		    android:textColor="#ffffff"
+		    android:layout_alignParentRight="true"/>
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="332dp"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:background="@drawable/video_bg1">
+		
+		<TextView
+			android:id="@+id/videoSecond_title"
+			android:layout_width="fill_parent"
+			android:layout_height="32dp"
+			android:paddingTop="5dp"
+			android:textColor="#ffffff"
+			android:paddingBottom="5dp"
+			android:textSize="16dp"
+			android:gravity="center"
+			android:text="解开洪秀全的神秘面纱"/>
+		<RelativeLayout
+			android:layout_width="277dp"
+			android:layout_height="158dp"
+			android:gravity="center"
+			android:orientation="vertical"
+			android:background="@drawable/videos_big">
+		<ImageView
+			android:id="@+id/videos_da_bofang_bg"
+			android:layout_width="277dp"
+			android:layout_height="158dp"
+			android:src="@drawable/videos_big"/>	
+		<ImageView
+			android:id="@+id/videos_da_bofang"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:src="@drawable/da_bofang"/>	
+		</RelativeLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal">
+		<WebView
+			android:id="@+id/videoSecond_content"
+			android:layout_width="277dp"
+			android:layout_height="132dp"
+			android:scrollbars="none"/>
+	</LinearLayout>	
+</LinearLayout>
+
+
+<AbsoluteLayout
+ 		android:layout_width="fill_parent"
+		android:layout_height="110dp">
+		<LinearLayout 
+	android:layout_width="fill_parent"
+		android:layout_height="110dp"
+		android:layout_x="0dp"
+		android:layout_y="0dp">
+	
+<Gallery
+	    android:id="@+id/video_gallery" 
+	    android:layout_width="fill_parent"
+		android:layout_height="110dp"
+		android:layout_marginLeft="-240dp"
+		android:background="@drawable/video_smallimg_bg1"/>
+		</LinearLayout>
+<LinearLayout 
+	android:id="@+id/video_layout"
+	android:orientation="horizontal"
+	android:layout_x="0dp"
+	android:layout_y="65dp"
+	android:layout_width="fill_parent"
+	android:gravity="center"
+	android:visibility="invisible"
+    android:layout_height="64px"
+	android:background="@drawable/news_buttom">
+	<ImageButton
+	android:id="@+id/pictures_bib1"
+	android:layout_width="120px"
+    android:layout_height="64px"
+    android:background="@drawable/news_news1"/>
+	<ImageButton 
+	android:background="@drawable/news_videos2" 
+	android:id="@+id/pictures_bib2" 	
+	android:layout_width="120px"
+    android:layout_height="64px"/>
+    <ImageButton
+	android:id="@+id/pictures_bib3"
+	android:layout_width="120px"
+    android:layout_height="64px"
+    android:background="@drawable/news_collects1"/>
+    <ImageButton
+	android:id="@+id/pictures_bib4"
+	android:layout_width="120px"
+    android:layout_height="64px"
+    android:background="@drawable/news_pictures1"/>
+</LinearLayout>
+
+
+</AbsoluteLayout>
+
+</LinearLayout>

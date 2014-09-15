@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+ <LinearLayout android:orientation="vertical"
+               android:id="@+id/banner" 
+               android:layout_height="wrap_content" 
+       		   android:layout_width="wrap_content"
+       		   android:background="@drawable/news_channel_fanhui_bg">
+    <ImageButton android:id="@+id/collects_fanhui"
+               android:layout_width="80px"
+               android:layout_height="38px"
+               android:layout_marginLeft="7dp"
+               android:paddingLeft="20dp"
+               android:background="@drawable/news_channel_return"></ImageButton>>
+ </LinearLayout>
+ 
+ <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="43dp"
+		android:background="@drawable/cntv_banner">
+		<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:background="@drawable/cntv_banner">
+		 <ImageView
+			android:id="@+id/help_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:src="@drawable/collect_help"
+		    android:paddingRight="20dp"
+		    android:layout_alignParentRight="true"/>
+		</RelativeLayout>
+	</LinearLayout>
+               
+ <LinearLayout android:orientation="vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="397dp"
+               android:background="@drawable/news_channel_bg">
+	 <ListView android:id="@+id/collect_list"
+	           android:layout_width="wrap_content"
+	           android:layout_height="397dp">
+	 </ListView>
+ </LinearLayout>
+ <LinearLayout android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/news_buttom">
+    <ImageView android:id="@+id/index_news"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/news_news1">
+    </ImageView>
+    <ImageView android:id="@+id/index_videos"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/news_videos1"
+               android:layout_toRightOf="@+id/index_news">
+    </ImageView>
+    <ImageView android:id="@+id/index_collects"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/news_collects1"
+               android:layout_toRightOf="@+id/index_videos">
+    </ImageView>
+    <ImageView android:id="@+id/index_pic"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/news_pictures1"
+               android:layout_toRightOf="@+id/index_collects">
+    </ImageView>
+   </LinearLayout>
+ 
+</LinearLayout>

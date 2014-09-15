@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/pictures_all_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/cntv_banner" >
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/top_menu"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/news_channel_fanhui_bg"
+            android:orientation="horizontal" >
+
+            
+
+            <TextView
+                android:id="@+id/news_requiername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="撒淡淡地说"
+                android:textColor="#FFFFFF"
+                android:textSize="16px" >
+            </TextView>
+            <ImageView
+                android:id="@+id/news_fanhui"
+                android:layout_width="40dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="6dp"
+                 >
+            </ImageView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/index_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/news_index_img" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/index_tuijian_title"
+                android:layout_width="fill_parent"
+                android:layout_height="18dp"
+                android:background="#5A5A5A"
+                android:gravity="center"
+                android:text="抱歉，网络异常，请检查网络！"
+                android:textColor="#FFFFFF"
+                android:textSize="9dip" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ListView
+                android:id="@+id/news_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/news_buttom"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/index_news"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/news_news1" >
+        </ImageView>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/index_videos"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/news_videos1" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/index_collects"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/news_collects1" >
+        </ImageView>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/index_pic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/news_pictures1" >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/news_channel_fanhui_bg"
+            android:scaleType="fitXY"/>
+        
+        <ImageView
+            android:id="@+id/news_fanhui"
+            android:layout_width="40dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.5px"
+            android:paddingLeft="20px" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+		
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/cntv_banner"/>
+        
+        <Button
+            android:id="@+id/collects_btn"
+            android:layout_width="52dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             android:layout_marginRight="5dp"
+            android:background="@drawable/collect_btn"
+            android:textColor="#FFFFFF" >
+        </Button>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <WebView
+                android:id="@+id/myWebView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </WebView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/display_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="0px"
+            android:layout_y="598px"
+            android:background="@drawable/news_buttom"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/index_news"
+                android:layout_width="120px"
+                android:layout_height="64px"
+                android:layout_weight="1"
+                android:background="@drawable/news_news2" />
+
+            <ImageButton
+                android:id="@+id/index_videos"
+                android:layout_width="120px"
+                android:layout_height="64px"
+                android:layout_weight="2"
+                android:background="@drawable/news_videos1" />
+
+            <ImageButton
+                android:id="@+id/index_collects"
+                android:layout_width="120px"
+                android:layout_height="64px"
+                android:layout_weight="3"
+                android:background="@drawable/news_collects1" />
+
+            <ImageButton
+                android:id="@+id/index_pic"
+                android:layout_width="120px"
+                android:layout_height="64px"
+                android:layout_weight="4"
+                android:background="@drawable/news_pictures1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
