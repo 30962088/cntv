@@ -34,7 +34,7 @@
                 android:gravity="center"
                 android:text="撒淡淡地说"
                 android:textColor="#FFFFFF"
-                android:textSize="16px" >
+                android:textSize="14sp" >
             </TextView>
             <ImageView
                 android:id="@+id/news_fanhui"
@@ -50,23 +50,23 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <ImageView
+            <com.cntv.magazine.pictures.ScaleImageView
                 android:id="@+id/index_img"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@drawable/news_index_img" >
-            </ImageView>
+            </com.cntv.magazine.pictures.ScaleImageView>
 
             <TextView
                 android:id="@+id/index_tuijian_title"
                 android:layout_width="fill_parent"
-                android:layout_height="18dp"
+                android:layout_height="36dp"
                 android:background="#5A5A5A"
                 android:gravity="center"
                 android:text="抱歉，网络异常，请检查网络！"
                 android:textColor="#FFFFFF"
-                android:textSize="9dip" >
+                android:textSize="12dp" >
             </TextView>
         </LinearLayout>
 
